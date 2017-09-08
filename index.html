@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>二维码生成器</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src='bootstrap/js/jquery.js'></script>
+	<script type="text/javascript" src='bootstrap/js/bootstrap.js'></script>
+</head>
+<body>
+<h2 style="font-size: 20px;color: red;text-shadow: #122b40 2px 2px 2px">二维码生成器</h2>
+<br><br>
+<form role="form" action='index.php' method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="name">网址</label>
+    <input type="text" class="form-control" name="address" id="address" placeholder="请输入扫码后进入页面的网址">
+  </div>
+  <div class="form-group">
+    <label for="name">生成二维码大小</label>
+    <input type="text" class="form-control" name="qrsize" id="qrsize" placeholder="请输入500以内的数字">
+  </div>
+  <div class="form-group">
+    <label for="inputfile">请输入二维码中附带的图片</label>
+    <input type="file" id="inputfile" name="inputfile">
+  </div>
+  <div class="form-group">
+    <label for="name">指定附带图片大小</label>
+    <input type="text" class="form-control" name="imgsize" id="imgsize" placeholder="请根据二维码大小调整附带图片大小" multiple="multiple">
+  </div>
+  <button type="submit" class="btn btn-default">提交</button>
+</form>
+<br><br><br>
+<span>PS：如生成的二维码未能生成有效二维码，请自行调整二维码大小以及附带图片大小的比例</span>
+</body>
+</html>
