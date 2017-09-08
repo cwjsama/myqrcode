@@ -1,0 +1,7 @@
+{
+	"require":{
+		"xiaohigh/curl":"1.0",
+		"endroid/qrcode":"2.3.1"
+	}
+
+}
